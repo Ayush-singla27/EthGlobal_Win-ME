@@ -36,20 +36,18 @@ export default function SideBar() {
   const path = usePathname();
 
   return (
-    <div className="col-span-1 flex h-[85vh] rounded-lg border-2 border-red-700 p-5  overflow-scroll flex-col ">
+    <div className="col-span-1 flex h-[88vh] rounded-lg border-2 border-red-700 p-2 flex-col">
       <Button
-        className={` hover:bg-white hover:text-black px-7 py-5 my-4 ${
-          path === routes.marketplace ? "bg-white text-black" : ""
-        } `}
+        className={` hover:bg-white hover:text-black px-7 py-5 my-4 ${path === routes.marketplace ? "bg-white text-black" : ""
+          } `}
         onClick={() => routeUser(routes.marketplace)}
       >
         <ShoppingBagIcon className="mr-2 h-4 w-4" />
         Marketplace
       </Button>
       <Button
-        className={` hover:bg-white hover:text-black px-7 py-5 my-4 ${
-          path === routes.playerNfts ? "bg-white text-black" : ""
-        }`}
+        className={` hover:bg-white hover:text-black px-7 py-5 my-4 ${path === routes.playerNfts ? "bg-white text-black" : ""
+          }`}
         onClick={() => routeUser(routes.playerNfts)}
       >
         <BadgeCheckIcon className="mr-2 h-4 w-4" />
